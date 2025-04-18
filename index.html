@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Digital clock
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="calculator-body">
+        <table>
+            <tr class="input-text">
+                <input type="text" id="input-id">
+            </tr>
+            <tr class="input-text">
+                <td class="delet-button"><button id="st-button" value="CE" onclick="deleteData()">CE</button></td>
+                <td class="singtific-button"><button id="temp" value="(" onclick="calculateValue('(')">(</button></td>
+                <td class="singtific-button"><button id="temp" value=")" onclick="calculateValue(')')">)</button></td>
+                <td class="singtific-button"><button id="temp" value="√" onclick="calculateValue('√')">√</button></td>
+                <td class="singtific-button"><button id="lt-button" value="²" onclick="calculateValue('²')">x²</button></td>
+            </tr>
+            <tr class="input-text">
+                <td class="singtific-button"><button id="st-button" value="sin" onclick="calculateValue('sin')">sin</button></td>
+                <td class="singtific-button"><button id="temp" value ="cos" onclick="calculateValue('cos')">cos</button></td>
+                <td class="singtific-button"><button id="temp" value ="tan" onclick="calculateValue('tan')">tan</button></td>
+                <td class="singtific-button"><button id="temp" value ="sin⁻¹" onclick="calculateValue('sin⁻¹')">sin⁻¹</button></td>
+                <td class="singtific-button"><button id="lt-button" value ="cos⁻¹" onclick="calculateValue('cos⁻¹')">cos⁻¹</button></td>
+            </tr>
+            <tr class="input-text">
+                <td><button id="st-button" value="7" onclick="calculateValue('7')">7</button></td>
+                <td><button value ="8" onclick="calculateValue('8')">8</button></td>
+                <td><button value ="9" onclick="calculateValue('9')">9</button></td>
+                <td class="singtific-button"><button id="temp" value ="3.1416" onclick="calculateValue('3.1416')">π</button></td>
+                <td class="singtific-button"><button id="lt-button" value ="tan⁻¹" onclick="calculateValue('tan⁻¹')">tan⁻¹</button></td>
+            </tr>
+            <tr class="input-text">
+                <td><button id="st-button" value ="4" onclick="calculateValue('4')">4</button></td>
+                <td><button value ="5" onclick="calculateValue('5')">5</button></td>
+                <td><button value ="6" onclick="calculateValue('6')">6</button></td>
+                <td class="logical-button"><button id="temp" value ="x" onclick="calculateValue('x')">x</button></td>
+                <td class="logical-button"><button id="lt-button" value ="÷" onclick="calculateValue('÷')">÷</button></td>
+            </tr>
+            <tr class="input-text">
+                <td><button id="st-button" value ="1" onclick="calculateValue('1')">1</button></td>
+                <td><button value ="2" onclick="calculateValue('2')">2</button></td>
+                <td><button value ="3" onclick="calculateValue('3')">3</button></td>
+                <td class="logical-button"><button id="temp" value ="+" onclick="calculateValue('+')">+</button></td>
+                <td class="logical-button"><button id="lt-button" value ="-" onclick="calculateValue('-')">-</button></td>
+            </tr>
+            <tr class="input-text">
+                <td><button id="st-button" value ="0" onclick="calculateValue('0')">0</button></td>
+                <td><button value ="00" onclick="calculateValue('00')">00</button></td>
+                <td><button value ="." onclick="calculateValue('.')">.</button></td>
+                <td class="logical-button"><button id="temp" value ="%" onclick="calculateValue('%')">%</button></td>
+                <td class="ans-button"><button id="lt-button" value="=" onclick="ans()">=</button></td>
+            </tr>
+                
+            
+            
+        </table>
+   </div>
+
+    
+    <script src="./style.js"></script>
+</body>
+</html>
